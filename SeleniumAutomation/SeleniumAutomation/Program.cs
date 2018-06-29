@@ -1,14 +1,10 @@
 ﻿using System;
-using System.IO;
-using Newtonsoft.Json;
 using Serilog;
 
 namespace SeleniumAutomation
 {
-    // http://tarunlalwani.com/post/reusing-existing-browser-session-selenium-csharp/
     class Program
     {
-        // "http://localhost:54298/", "85f9929f2500eb964678cdf9b7714a38"
         static void Main(string[] args)
         {
             SetupLogger();

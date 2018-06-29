@@ -2,7 +2,6 @@
 using System.IO;
 using Newtonsoft.Json;
 using OpenQA.Selenium.Chrome;
-using Newtonsoft.Json.Serialization;
 
 namespace SeleniumAutomationStarter
 {
