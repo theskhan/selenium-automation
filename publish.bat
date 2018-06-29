@@ -1,0 +1,2 @@
+dotnet publish --output ../../publish/Starter ./SeleniumAutomationStarter/SeleniumAutomationStarter/SeleniumAutomationStarter.csproj
+dotnet publish --output ../../publish/Executor ./SeleniumAutomation/SeleniumAutomation/SeleniumAutomation.csproj
