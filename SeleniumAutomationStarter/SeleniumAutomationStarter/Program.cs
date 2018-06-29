@@ -33,8 +33,8 @@ namespace SeleniumAutomationStarter
             writer.Close();
             writer.Dispose();
 
-            Environment.SetEnvironmentVariable("SeleniumExecutorUrl", settings.ExecutorUrl);
-            Environment.SetEnvironmentVariable("SeleniumSessionId", settings.SessionId);
+            Environment.SetEnvironmentVariable("SeleniumExecutorUrl", settings.ExecutorUrl, EnvironmentVariableTarget.User);
+            Environment.SetEnvironmentVariable("SeleniumSessionId", settings.SessionId, EnvironmentVariableTarget.User);
 
             Console.ReadLine();
         }

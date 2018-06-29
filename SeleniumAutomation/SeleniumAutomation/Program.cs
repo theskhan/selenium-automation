@@ -14,8 +14,8 @@ namespace SeleniumAutomation
             SetupLogger();
             var settings = new Settings
             {
-                ExecutorUrl = Environment.GetEnvironmentVariable("SeleniumExecutorUrl"),
-                SessionId = Environment.GetEnvironmentVariable("SeleniumSessionId")
+                ExecutorUrl = Environment.GetEnvironmentVariable("SeleniumExecutorUrl", EnvironmentVariableTarget.User),
+                SessionId = Environment.GetEnvironmentVariable("SeleniumSessionId", EnvironmentVariableTarget.User)
             };
 
             if (string.IsNullOrEmpty(settings.ExecutorUrl))

@@ -14,4 +14,10 @@
     <PackageReference Include="Selenium.WebDriver" Version="3.13.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="url.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
