@@ -28,8 +28,17 @@ namespace SeleniumAutomation
 
                     foreach (var alertElement in alertListItemElement)
                     {
-                        var notifTimeStamp = alertElement.FindElement(By.ClassName("notif_time_stamp")).Text;
-                        var alertTimeStamp = DateTime.Parse(notifTimeStamp);
+                        IWebElement notifTimeStampElement;
+                        try
+                        {
+                            notifTimeStampElement = alertElement.FindElement(By.ClassName("notif_time_stamp"));
+                        }
+                        catch(NoSuchElementException)
+                        {
+                            continue;
+                        }
+                        
+                        var alertTimeStamp = DateTime.Parse(notifTimeStampElement.Text);
 
                         var alertObject = new Alert
                         {
